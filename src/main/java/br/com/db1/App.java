@@ -1,6 +1,10 @@
 package br.com.db1;
 
 import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.LinkedList;
+
+import antlr.collections.List;
 
 /**
  * Hello world!
@@ -49,6 +53,20 @@ public class App {
         }else{
         	
         }
+        
+        int[] matriz = {1,2,3,4};
+        int matriz2 = 1;
+        
+        Integer[] matrizInteger = {1,2,3,4};
+        
+        List<Integer> valores = new ArrayList<Integer>();
+        List<Integer> valoresLinkado = new LinkedList<Integer>();
+        
+        Set<Integer> valoresNaoRepetidos = new HashSet<Integer>();
+        
+        List<String> nomes;
+        List<Dinheiro> meuSalario = 10;
+
         
     }
 }
