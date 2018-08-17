@@ -9,6 +9,10 @@ import org.junit.Test;
 
 public class ExerciciosCollection {
 
+	 
+	public List<Integer> pares = new ArrayList<Integer>();
+	public List<Integer> impares = new ArrayList<Integer>();
+	
 	
 	public List<String> exercicioCores(){
 		List<String> cores = new ArrayList<String>();
@@ -80,8 +84,6 @@ public class ExerciciosCollection {
 	}
 	
 	public void numerosAteVinte(){
-		List<Integer> pares = new ArrayList<Integer>();
-		List<Integer> impares = new ArrayList<Integer>();
 		for (Integer i = 1; i <= 20; i++){
 			if (i %2 == 0){
 				pares.add(i);
@@ -93,7 +95,7 @@ public class ExerciciosCollection {
 		System.out.println(impares); 
 	}
 	
-	public List<String> nomesOrdenados(){
+	public Integer nomesOrdenados(){
 		
 		HashSet<String> nomes = new HashSet<String>();
 		nomes.add("ANA");
@@ -113,7 +115,7 @@ public class ExerciciosCollection {
 		List<String> nomesOrdenados = new ArrayList<String>(nomes);
 		Collections.sort(nomesOrdenados);
 		System.out.println("Nomes ordenados: " + nomesOrdenados);
-		return nomesOrdenados;
+		return nomesOrdenados.size();
 	}
 	
 }

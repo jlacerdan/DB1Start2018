@@ -78,42 +78,14 @@ public class ExerciciosCollectionTest {
 	
 	@Test
 	public void numerosAteVinteTest(){
-		List<Integer> pares = new ArrayList<Integer>();
-		List<Integer> impares = new ArrayList<Integer>();
-		for (Integer i = 1; i <= 20; i++){
-			if (i %2 == 0){
-				pares.add(i);
-			} else {
-				impares.add(i);
-			}
-		}
-		System.out.println(pares);
-		System.out.println(impares);
+		chamMetodo.numerosAteVinte();
+		assertEquals(10, chamMetodo.pares.size(), 0);
+		assertEquals(10, chamMetodo.impares.size(), 0);
+		
 	}
-	
 	@Test
 	public void nomesDistintosOrdenados(){
-		HashSet<String> nomes = new HashSet<String>();
-		nomes.add("ANA");
-		nomes.add("ANA LAURA");
-		nomes.add("JOSE");
-		nomes.add("WAGNER");
-		nomes.add("RODOLFO");
-		nomes.add("ROBERVAL");
-		nomes.add("RODOLPHO");
-		nomes.add("VAGNER");
-		nomes.add("JOSÉ");
-		nomes.add("JOALDO");
-		nomes.add("CLECIO");
-		nomes.add("JOSÈ");
-		nomes.add("MARIA");
-		nomes.add("MARCOS");
-		List<String> nomesOrdenados = new ArrayList<String>(nomes);
-		Collections.sort(nomesOrdenados);
-		System.out.println(nomesOrdenados);
-		
-		
-		
+		assertEquals(13, chamMetodo.nomesOrdenados(), 0);
 	}
 	
 	
