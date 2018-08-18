@@ -1,14 +1,11 @@
 package br.com.db1;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
 public class ExerciciosCollectionTest {
 
 	ExerciciosCollection chamMetodo = new ExerciciosCollection();
