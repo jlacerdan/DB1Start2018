@@ -34,5 +34,10 @@ public class Telefone {
 		this.tipo = tipo;
 	}
 
+	@Override
+	public String toString() {
+		return formataTelefone();
+	}
+	
 	
 }

@@ -13,9 +13,13 @@ import antlr.collections.List;
 public class App {
 	public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         
         
+
+
+        
+        
+        /*
         //int zero = 0;
         Integer zeroObjeto = 0;
         
@@ -67,6 +71,6 @@ public class App {
         List<String> nomes;
         List<Dinheiro> meuSalario = 10;
 
-        
+      */  
     }
 }
